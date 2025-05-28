@@ -22,6 +22,13 @@ This document describes the conventions for writing explainer files in each lear
   4. Included Explainers (with a brief description of each)
 - **After these, the file should include the standard explainer sections as described below, to provide even deeper context and reference for the grouping as a whole.**
 
+## 📁 Required File Flow Sections
+- Every explainer must include **two separate file flow (file tree) sections** for maximum context:
+  1. **Main Explainer File Flow:** In the main explainer section, show where the concept fits in the overall project structure. This helps orient the reader to the big picture.
+  2. **Example-Specific File Flow:** In the example section, provide a file tree specific to the example being discussed. This gives concrete context for the code and files used in the example.
+- Both file flow sections should use clear, commented file trees and be placed in their respective sections.
+- This dual approach ensures both conceptual and practical clarity for all readers.
+
 ## 📝 Required Sections & Structure
 Each explainer file should include the following sections, in order:
 
@@ -315,3 +322,15 @@ import { fetchData } from '@utils/api';
 **Use this example as a gold standard for detail and clarity in all future explainer files.**
 
 > **Note:** The example response above represents the **base level of detail** required for every explainer file. All explanation files should aim for this level of completeness at a minimum, and should strive for even more detail, depth, and clarity wherever possible. 
+
+## 🏆 Multi-Level Explanation Convention
+- If requested, explainer files (or sets of files) can be written at **3-5 different levels of detail**, ranging from absolute beginner to advanced/senior developer.
+- Each level should:
+  - Use language, analogies, and code complexity appropriate to the intended audience (e.g., simple analogies and step-by-step for beginners, deeper technical context and edge cases for advanced users).
+  - Provide in-line comments, explanations, and examples that are in kind to the level of the explanation.
+  - Ensure that examples and code samples are tailored to the learning stage (e.g., more hand-holding and context for beginners, more abstraction and best practices for advanced levels).
+- This approach ensures that learning resources are accessible and maximally useful for all experience levels. 
+
+## 📝 Example of a Beginner-Level Explainer
+- The file `api/api-basics.md` is an excellent representation of the type of response and level of detail to aim for when writing a **beginner-level explanation**.
+- Use it as a reference for structure, in-line comments, file flow sections, and clarity when creating similar resources. 
