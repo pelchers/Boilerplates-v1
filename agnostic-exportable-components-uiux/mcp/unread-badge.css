@@ -1,0 +1,21 @@
+.unread-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 1.25rem;
+  height: 1.25rem;
+  padding: 0 0.25rem;
+  font-size: 0.75rem;
+  font-weight: bold;
+  color: #fff;
+  background: #dc2626;
+  border-radius: 9999px;
+  position: relative;
+  animation: badge-pulse 1.2s infinite;
+}
+
+@keyframes badge-pulse {
+  0% { box-shadow: 0 0 0 0 #dc262680; }
+  70% { box-shadow: 0 0 0 6px #dc262600; }
+  100% { box-shadow: 0 0 0 0 #dc262600; }
+} 
